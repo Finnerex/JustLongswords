@@ -26,10 +26,6 @@ public class ItemLongsword : Item
     {
         base.OnLoaded(api);
         _attackAnimations = Attributes["attackAnimations"].AsArray<string>();
-        foreach (var anim in _attackAnimations)
-        {
-            api.Logger.Event("Has animation: " + anim);
-        }
     }
 
     public override string GetHeldTpHitAnimation(ItemSlot slot, Entity byEntity) => CurrentAnimation;
@@ -37,10 +33,7 @@ public class ItemLongsword : Item
     public override void OnAttackingWith(IWorldAccessor world, Entity byEntity, Entity attackedEntity, ItemSlot itemslot)
     {
         base.OnAttackingWith(world, byEntity, attackedEntity, itemslot);
-        api.Logger.Event($"Has attacked with {CurrentAnimation} ({CurrentAttackIndex})");
-        
         CurrentAttackIndex++;
-    
     }
 
 }
