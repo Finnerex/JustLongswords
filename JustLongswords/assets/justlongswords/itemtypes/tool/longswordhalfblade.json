@@ -1,0 +1,50 @@
+{
+	"code": "longswordhalfblade",
+	"shape": { "base": "item/tool/blade/ironlongswordhalfblade" },
+	"variantgroups": [
+		{ "code": "material", "states": ["bismuthbronze", "blackbronze", "tinbronze", "iron", "meteoriciron", "steel"] }
+	],
+	"texturesByType": {
+		"*-bismuthbronze": {
+			"ingot": { "base": "game:block/metal/ingot/bismuthbronze" }
+		},
+		"*-blackbronze": {
+			"ingot": { "base": "game:block/metal/ingot/blackbronze" }
+		},
+		"*-tinbronze": {
+			"ingot": { "base": "game:block/metal/ingot/tinbronze" }
+		},
+		"*-iron": {
+			"ingot": { "base": "game:block/metal/ingot/iron" }
+		},
+		"*-meteoriciron": {
+			"ingot": { "base": "game:block/metal/ingot/meteoriciron" }
+		},
+		"*-steel": {
+			"ingot": { "base": "game:block/metal/ingot/steel" }
+		}
+	},
+	"creativeinventory": {
+		"general": ["*"], "justlongswords": ["*"] },
+	"maxstacksize": 8,
+	"guiTransform": {
+		"translation": { "x": 0, "y": 0, "z": 0 },
+		"rotation": { "x": -89, "y": 47, "z": 33 },
+		"origin": { "x": 0.61, "y": 0, "z": 0.47 },
+		"scale": 1.7 },
+	"fpHandTransform": {
+		"translation": { "x": -0.4, "y": -0.5, "z": 0.6 },
+		"rotation": { "x": -35, "y": 0, "z": 85 },
+		"origin": { "x": 0.1, "y": 0.5, "z": 0.5 },
+		"scale": 2.75 },
+	"groundTransform": {
+		"translation": { "x": 0, "y": 0, "z": 0 },
+		"rotation": { "x": 0, "y": 0, "z": 0 },
+		"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+		"scale": 3.4 },
+	"tpHandTransform": {
+		"translation": { "x": -0.87, "y": -0.025, "z": -0.54 },
+		"rotation": { "x": -90, "y": 0, "z": 0 },
+		"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+		"scale": ".85" }
+}

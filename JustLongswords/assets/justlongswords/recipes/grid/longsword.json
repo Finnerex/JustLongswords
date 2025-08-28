@@ -1,0 +1,62 @@
+[
+	{
+		"ingredientPattern": "B,B,S",
+		"ingredients": {
+			"B": { "type": "item", "code": "longswordhalfblade-steel" },
+			"S": { "type": "item", "code": "game:stick" }
+		},
+		"width": 1,
+		"height": 3,
+		"output": { "type": "item", "code": "longsword-steel", "quantity": 1  }
+	},
+	{
+		"ingredientPattern": "B,B,S",
+		"ingredients": {
+			"B": { "type": "item", "code": "longswordhalfblade-tinbronze" },
+			"S": { "type": "item", "code": "game:stick" }
+		},
+		"width": 1,
+		"height": 3,
+		"output": { "type": "item", "code": "longsword-tinbronze", "quantity": 1  }
+	},
+	{
+		"ingredientPattern": "B,B,S",
+		"ingredients": {
+			"B": { "type": "item", "code": "longswordhalfblade-bismuthbronze" },
+			"S": { "type": "item", "code": "game:stick" }
+		},
+		"width": 1,
+		"height": 3,
+		"output": { "type": "item", "code": "longsword-bismuthbronze", "quantity": 1  }
+	},
+	{
+		"ingredientPattern": "B,B,S",
+		"ingredients": {
+			"B": { "type": "item", "code": "longswordhalfblade-blackbronze" },
+			"S": { "type": "item", "code": "game:stick" }
+		},
+		"width": 1,
+		"height": 3,
+		"output": { "type": "item", "code": "longsword-blackbronze", "quantity": 1  }
+	},
+	{
+		"ingredientPattern": "B,B,S",
+		"ingredients": {
+			"B": { "type": "item", "code": "longswordhalfblade-iron" },
+			"S": { "type": "item", "code": "game:stick" }
+		},
+		"width": 1,
+		"height": 3,
+		"output": { "type": "item", "code": "longsword-iron", "quantity": 1  }
+	},
+	{
+		"ingredientPattern": "B,B,S",
+		"ingredients": {
+			"B": { "type": "item", "code": "longswordhalfblade-meteoriciron" },
+			"S": { "type": "item", "code": "game:stick" }
+		},
+		"width": 1,
+		"height": 3,
+		"output": { "type": "item", "code": "longsword-meteoriciron", "quantity": 1  }
+	}
+]

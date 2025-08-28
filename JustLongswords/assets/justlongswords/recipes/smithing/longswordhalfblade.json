@@ -1,0 +1,22 @@
+[	
+	{
+		"ingredient": {
+			"type": "item",
+			"code": "game:ingot-*",
+			"name": "metal",
+			"allowedVariants": ["tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel"]
+		},
+		"pattern": [
+			[
+				"_#############_",
+				"_#############_",
+				"_#############_"
+			]
+		],
+		"name": "longswordhalfblade",
+		"output": {
+			"type": "item",
+			"code": "longswordhalfblade-{metal}"
+		}
+	}
+]

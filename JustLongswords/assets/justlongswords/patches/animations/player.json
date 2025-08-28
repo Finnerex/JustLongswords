@@ -1,0 +1,383 @@
+[
+
+  {
+    "file": "game:entities/humanoid/player",
+    "op": "add",
+    "path": "/client/animations/-",
+    "value": { "code": "LongswordIdleReady", "animation": "LongswordIdleReady", "animationSpeed": 1, "blendMode": "Average", "weight": 0.01 }
+  },
+  {
+    "file": "game:shapes/entity/humanoid/seraph-faceless",
+    "op": "add",
+    "path": "/animations/-",
+    "value": {
+			"name": "LongswordIdleReady",
+			"code": "LongswordIdleReady",
+			"quantityframes": 1,
+			"onActivityStopped": "Rewind",
+			"onAnimationEnd": "Repeat",
+			"keyframes": [
+				{
+					"frame": 0,
+					"elements": {
+						"UpperArmR": { "rotationX": -3.0, "rotationY": 0.0, "rotationZ": -33.0 },
+						"LowerArmR": { "rotationX": -25.0, "rotationY": -14.0, "rotationZ": -14.0 },
+						"UpperArmL": { "offsetX": 0.0, "offsetY": -0.8, "offsetZ": 0.0, "rotationX": 8.0, "rotationY": 0.0, "rotationZ": -27.0 },
+						"LowerArmL": { "rotationX": 23.0, "rotationY": -25.0, "rotationZ": -5.0 }
+					}
+				}
+			]
+		}
+  },
+  {
+    "file": "game:entities/humanoid/player",
+    "op": "add",
+    "path": "/client/animations/-",
+    "value": { 
+      "code": "LongswordCutLeft", 
+      "animation": "LongswordCutLeft", 
+      "animationSpeed": 0.8,
+      "blendMode": "Average",
+      "weight": 1000,
+      "attributes": {
+        "damageAtFrame": 10,
+        "authorative": true
+      }
+    }
+  },
+  {
+    "file": "game:shapes/entity/humanoid/seraph-faceless",
+    "op": "add",
+    "path": "/animations/-",
+    "value": {
+			"name": "LongswordCutLeft",
+			"code": "LongswordCutLeft",
+			"quantityframes": 17,
+			"onActivityStopped": "PlayTillEnd",
+			"onAnimationEnd": "EaseOut",
+			"keyframes": [
+				{
+					"frame": 0,
+					"elements": {
+						"UpperArmL": { "offsetX": 0.0, "offsetY": -0.8, "offsetZ": 0.0, "rotationX": 8.0, "rotationY": 0.0, "rotationZ": -27.0 },
+						"UpperTorso": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"LowerTorso": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"UpperArmR": { "rotationX": -3.0, "rotationY": 0.0, "rotationZ": -33.0 },
+						"LowerArmL": { "rotationX": 23.0, "rotationY": -25.0, "rotationZ": -5.0 },
+						"UpperFootL": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"UpperFootR": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"LowerFootR": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"LowerArmR": { "rotationX": -25.0, "rotationY": -14.0, "rotationZ": -14.0 },
+						"Head": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 }
+					}
+				},
+				{
+					"frame": 4,
+					"elements": {
+						"UpperArmR": { "offsetX": 0.2, "offsetY": 0.3, "offsetZ": 0.0, "rotationX": 32.0, "rotationY": 0.0, "rotationZ": -12.0769 },
+						"LowerArmR": { "rotationX": -60.6154, "rotationY": -1.6154, "rotationZ": -57.6154 },
+						"UpperTorso": { "rotationX": 0.0, "rotationY": -12.0, "rotationZ": 0.0 },
+						"Head": { "rotationX": 0.0, "rotationY": 14.0, "rotationZ": 0.0 },
+						"LowerTorso": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": -6.0, "rotationZ": 0.0 },
+						"UpperFootL": { "rotationX": 0.0, "rotationY": 4.0, "rotationZ": 2.0 },
+						"UpperFootR": { "rotationX": 1.0, "rotationY": 3.0, "rotationZ": -35.0 },
+						"LowerFootR": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 40.0 },
+						"UpperArmL": { "rotationX": 19.9231, "rotationY": -7.0, "rotationZ": -40.7692 },
+						"LowerArmL": { "rotationX": 42.0, "rotationY": -40.0, "rotationZ": 5.3077 },
+						"ItemAnchor": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 }
+					}
+				},
+				{
+					"frame": 6,
+					"elements": {
+						"LowerTorso": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 5.5455, "rotationZ": 0.0 },
+						"UpperTorso": { "rotationX": 0.0, "rotationY": 1.0909, "rotationZ": 0.0 },
+						"UpperFootL": { "rotationX": 0.0, "rotationY": 2.2727, "rotationZ": 0.6364 },
+						"UpperFootR": { "rotationX": 2.8182, "rotationY": -5.0455, "rotationZ": -47.1364 },
+						"LowerFootR": { "rotationX": 0.0, "rotationY": -3.5, "rotationZ": 47.2273 },
+						"UpperArmR": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 17.6364, "rotationY": -3.0, "rotationZ": -63.8811 },
+						"LowerArmR": { "rotationX": -62.1399, "rotationY": -60.8671, "rotationZ": -63.6853 },
+						"ItemAnchor": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 26.0 },
+						"UpperArmL": { "rotationX": 5.7552, "rotationY": -14.7273, "rotationZ": -78.2657 },
+						"LowerArmL": { "rotationX": 21.5455, "rotationY": -35.2727, "rotationZ": 0.4336 },
+						"Head": { "rotationX": 0.0, "rotationY": -2.5455, "rotationZ": 0.0 }
+					}
+				},
+				{
+					"frame": 8,
+					"elements": {
+						"UpperFootL": { "rotationX": -10.0, "rotationY": 4.5455, "rotationZ": 25.4949 },
+						"LowerTorso": { "offsetX": -7.0, "offsetY": -1.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 12.3131, "rotationZ": 0.0 },
+						"UpperFootR": { "rotationX": 4.6364, "rotationY": -13.0909, "rotationZ": -39.2727 },
+						"UpperTorso": { "rotationX": 0.0, "rotationY": 22.8485, "rotationZ": 0.0 },
+						"LowerFootR": { "rotationX": 0.0, "rotationY": -7.0, "rotationZ": 38.4545 },
+						"UpperArmR": { "rotationX": 1.0505, "rotationY": -25.3333, "rotationZ": -78.0186 },
+						"LowerArmR": { "rotationX": -52.8866, "rotationY": -77.4522, "rotationZ": -50.6441 },
+						"ItemAnchor": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 51.0 },
+						"UpperArmL": { "offsetX": 0.0, "offsetY": -0.8, "offsetZ": 0.0, "rotationX": 8.2541, "rotationY": -33.4545, "rotationZ": -88.8733 },
+						"LowerArmL": { "rotationX": 16.8687, "rotationY": -64.9899, "rotationZ": 9.2261 },
+						"Head": { "rotationX": -3.0, "rotationY": -30.9798, "rotationZ": 0.0 }
+					}
+				},
+				{
+					"frame": 9,
+					"elements": {
+						"UpperArmL": { "rotationX": -2.0913, "rotationY": -7.5281, "rotationZ": -72.5936 },
+						"LowerArmL": { "rotationX": 32.8273, "rotationY": -37.7523, "rotationZ": -8.7847 }
+					}
+				},
+				{
+					"frame": 11,
+					"elements": {
+						"UpperArmR": { "rotationX": -5.5281, "rotationY": 19.2857, "rotationZ": -43.5874 },
+						"UpperTorso": { "rotationX": 0.0, "rotationY": 30.5844, "rotationZ": 0.0 },
+						"Head": { "rotationX": -4.5714, "rotationY": -35.5541, "rotationZ": 0.0 },
+						"LowerArmR": { "rotationX": -44.9028, "rotationY": -57.3876, "rotationZ": -33.4093 },
+						"UpperArmL": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": -13.7822, "rotationY": -12.6753, "rotationZ": -13.0343 },
+						"LowerArmL": { "rotationX": 4.7446, "rotationY": -25.2771, "rotationZ": -62.8062 },
+						"ItemAnchor": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 50.9231 },
+						"UpperFootL": { "rotationX": -8.5714, "rotationY": 3.8961, "rotationZ": 21.8528 },
+						"UpperFootR": { "rotationX": 3.974, "rotationY": -11.2208, "rotationZ": -33.6623 },
+						"LowerFootR": { "rotationX": 0.0, "rotationY": -6.0, "rotationZ": 32.961 },
+						"LowerTorso": { "offsetX": -6.0, "offsetY": -0.8571, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 10.5541, "rotationZ": 0.0 }
+					}
+				},
+				{
+					"frame": 16,
+					"elements": {
+						"UpperArmR": { "rotationX": -5.5281, "rotationY": 19.2857, "rotationZ": -43.5874 },
+						"UpperTorso": { "rotationX": 0.0, "rotationY": 30.5844, "rotationZ": 0.0 },
+						"Head": { "rotationX": -4.5714, "rotationY": -35.5541, "rotationZ": 0.0 },
+						"LowerArmR": { "rotationX": -44.9028, "rotationY": -57.3876, "rotationZ": -33.4093 },
+						"UpperArmL": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": -13.7822, "rotationY": -12.6753, "rotationZ": -13.0343 },
+						"LowerArmL": { "rotationX": 4.7446, "rotationY": -25.2771, "rotationZ": -62.8062 },
+						"ItemAnchor": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 50.9231 },
+						"UpperFootL": { "rotationX": -8.5714, "rotationY": 3.8961, "rotationZ": 21.8528 },
+						"UpperFootR": { "rotationX": 3.974, "rotationY": -11.2208, "rotationZ": -33.6623 },
+						"LowerFootR": { "rotationX": 0.0, "rotationY": -6.0, "rotationZ": 32.961 },
+						"LowerTorso": { "offsetX": -6.0, "offsetY": -0.8571, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 10.5541, "rotationZ": 0.0 }
+					}
+				}
+			]
+		}
+  },
+
+  {
+    "file": "game:entities/humanoid/player",
+    "op": "add",
+    "path": "/client/animations/-",
+    "value": { 
+      "code": "LongswordCutRight", 
+      "animation": "LongswordCutRight", 
+      "animationSpeed": 0.7,
+      "blendMode": "Average",
+      "weight": 1000,
+      "attributes": {
+        "damageAtFrame": 7,
+        "authorative": true
+      }
+    }
+  },
+  {
+    "file": "game:shapes/entity/humanoid/seraph-faceless",
+    "op": "add",
+    "path": "/animations/-",
+    "value":{
+			"name": "LongswordCutRight",
+			"code": "LongswordCutRight",
+			"quantityframes": 13,
+			"onActivityStopped": "PlayTillEnd",
+			"onAnimationEnd": "EaseOut",
+			"keyframes": [
+				{
+					"frame": 0,
+					"elements": {
+						"UpperArmR": { "rotationX": -5.5281, "rotationY": 19.2857, "rotationZ": -43.5874 },
+						"UpperTorso": { "rotationX": 0.0, "rotationY": 30.5844, "rotationZ": 0.0 },
+						"Head": { "rotationX": -4.5714, "rotationY": -35.5541, "rotationZ": 0.0 },
+						"LowerArmR": { "rotationX": -44.9028, "rotationY": -57.3876, "rotationZ": -33.4093 },
+						"UpperArmL": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": -13.7822, "rotationY": -12.6753, "rotationZ": -13.0343 },
+						"LowerArmL": { "rotationX": 4.7446, "rotationY": -25.2771, "rotationZ": -62.8062 },
+						"ItemAnchor": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 50.9231 },
+						"UpperFootL": { "rotationX": -8.5714, "rotationY": 3.8961, "rotationZ": 21.8528 },
+						"UpperFootR": { "rotationX": 3.974, "rotationY": -11.2208, "rotationZ": -33.6623 },
+						"LowerFootR": { "rotationX": 0.0, "rotationY": -6.0, "rotationZ": 32.961 },
+						"LowerTorso": { "offsetX": -6.0, "offsetY": -0.8571, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 10.5541, "rotationZ": 0.0 }
+					}
+				},
+				{
+					"frame": 1,
+					"elements": {
+						"UpperArmL": { "rotationX": -1.0322, "rotationY": -20.1753, "rotationZ": -42.2843 },
+						"LowerArmL": { "rotationX": 3.9946, "rotationY": -9.7771, "rotationZ": -23.5562 },
+						"ItemAnchor": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 12.1923 }
+					}
+				},
+				{
+					"frame": 4,
+					"elements": {
+						"UpperArmR": { "rotationX": 63.4719, "rotationY": 15.2857, "rotationZ": -75.5874 },
+						"ItemAnchor": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"LowerArmR": { "rotationX": 3.0972, "rotationY": 6.6124, "rotationZ": -55.4093 },
+						"UpperArmL": { "rotationX": 17.2178, "rotationY": -14.6753, "rotationZ": -62.0343 },
+						"LowerArmL": { "rotationX": 41.7446, "rotationY": 44.7229, "rotationZ": -49.8062 },
+						"UpperTorso": { "rotationX": 0.0, "rotationY": 30.0, "rotationZ": 0.0 },
+						"LowerTorso": { "offsetX": -6.0, "offsetY": -0.8571, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 10.0, "rotationZ": 0.0 },
+						"Head": { "rotationX": -4.3214, "rotationY": -37.0541, "rotationZ": 0.0 },
+						"UpperFootL": { "rotationX": -8.5714, "rotationY": 3.8961, "rotationZ": 21.8528 },
+						"LowerFootL": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"UpperFootR": { "rotationX": 3.974, "rotationY": -11.2208, "rotationZ": -33.6623 },
+						"LowerFootR": { "rotationX": 0.0, "rotationY": -6.0, "rotationZ": 32.961 }
+					}
+				},
+				{
+					"frame": 8,
+					"elements": {
+						"UpperArmL": { "offsetX": 0.0, "offsetY": -0.8, "offsetZ": 0.0, "rotationX": 4.6345, "rotationY": -48.5086, "rotationZ": -80.951 },
+						"UpperTorso": { "rotationX": 0.0, "rotationY": -16.4156, "rotationZ": 0.0 },
+						"LowerArmL": { "rotationX": 63.6613, "rotationY": 67.8896, "rotationZ": -58.8895 },
+						"LowerArmR": { "rotationX": 11.0972, "rotationY": 7.2791, "rotationZ": -26.576 },
+						"UpperArmR": { "rotationX": 61.7219, "rotationY": 7.619, "rotationZ": -57.9207 },
+						"ItemAnchor": { "rotationX": 0.0, "rotationY": -14.0, "rotationZ": 55.2436 },
+						"LowerTorso": { "offsetX": 1.0, "offsetY": -0.2, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": -3.4459, "rotationZ": 0.0 },
+						"Head": { "rotationX": 2.4286, "rotationY": 14.4459, "rotationZ": 0.0 },
+						"UpperFootL": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -12.0 },
+						"LowerFootL": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 10.0 },
+						"UpperFootR": { "rotationX": 6.974, "rotationY": -17.2208, "rotationZ": 7.3377 },
+						"LowerFootR": { "rotationX": -3.0, "rotationY": -6.0, "rotationZ": 0.961 }
+					}
+				},
+				{
+					"frame": 12,
+					"elements": {
+						"LowerTorso": { "offsetX": 1.0, "offsetY": -0.2, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": -3.4459, "rotationZ": 0.0 },
+						"UpperTorso": { "rotationX": 0.0, "rotationY": -16.4156, "rotationZ": 0.0 },
+						"UpperArmR": { "rotationX": 61.7219, "rotationY": 7.619, "rotationZ": -57.9207 },
+						"LowerArmR": { "rotationX": 11.0972, "rotationY": 7.2791, "rotationZ": -26.576 },
+						"ItemAnchor": { "rotationX": 0.0, "rotationY": -14.0, "rotationZ": 55.2436 },
+						"UpperArmL": { "offsetX": 0.0, "offsetY": -0.8, "offsetZ": 0.0, "rotationX": 4.6345, "rotationY": -48.5086, "rotationZ": -80.951 },
+						"LowerArmL": { "rotationX": 63.6613, "rotationY": 67.8896, "rotationZ": -58.8895 },
+						"Head": { "rotationX": 2.4286, "rotationY": 14.4459, "rotationZ": 0.0 },
+						"UpperFootL": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -12.0 },
+						"LowerFootL": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 10.0 },
+						"UpperFootR": { "rotationX": 6.974, "rotationY": -17.2208, "rotationZ": 7.3377 },
+						"LowerFootR": { "rotationX": -3.0, "rotationY": -6.0, "rotationZ": 0.961 }
+					}
+				}
+			]
+		}
+  },
+  {
+    "file": "game:entities/humanoid/player",
+    "op": "add",
+    "path": "/client/animations/-",
+    "value": { 
+      "code": "LongswordThrust", 
+      "animation": "LongswordThrust", 
+      "animationSpeed": 0.7,
+      "blendMode": "Average",
+      "weight": 1000,
+      "attributes": {
+        "damageAtFrame": 6,
+        "authorative": true
+      }
+    }
+  },
+  {
+    "file": "game:shapes/entity/humanoid/seraph-faceless",
+    "op": "add",
+    "path": "/animations/-",
+    "value": {
+			"name": "LongswordThrust",
+			"code": "LongswordThrust",
+			"quantityframes": 12,
+			"onActivityStopped": "PlayTillEnd",
+			"onAnimationEnd": "EaseOut",
+			"keyframes": [
+				{
+					"frame": 0,
+					"elements": {
+						"LowerTorso": { "offsetX": 1.0, "offsetY": -0.2, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": -3.4459, "rotationZ": 0.0 },
+						"UpperTorso": { "rotationX": 0.0, "rotationY": -16.4156, "rotationZ": 0.0 },
+						"UpperArmR": { "rotationX": 61.7219, "rotationY": 7.619, "rotationZ": -57.9207 },
+						"LowerArmR": { "rotationX": 11.0972, "rotationY": 7.2791, "rotationZ": -26.576 },
+						"ItemAnchor": { "rotationX": 0.0, "rotationY": -14.0, "rotationZ": 55.2436 },
+						"UpperArmL": { "offsetX": 0.0, "offsetY": -0.8, "offsetZ": 0.0, "rotationX": 4.6345, "rotationY": -48.5086, "rotationZ": -80.951 },
+						"LowerArmL": { "rotationX": 63.6613, "rotationY": 67.8896, "rotationZ": -58.8895 },
+						"Head": { "rotationX": 2.4286, "rotationY": 14.4459, "rotationZ": 0.0 },
+						"UpperFootL": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -12.0 },
+						"LowerFootL": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 10.0 },
+						"UpperFootR": { "rotationX": 6.974, "rotationY": -17.2208, "rotationZ": 7.3377 },
+						"LowerFootR": { "rotationX": -3.0, "rotationY": -6.0, "rotationZ": 0.961 }
+					}
+				},
+				{
+					"frame": 3,
+					"elements": {
+						"UpperArmR": { "rotationX": 51.7219, "rotationY": 7.619, "rotationZ": -26.9207 },
+						"LowerArmR": { "rotationX": 11.0972, "rotationY": 2.2791, "rotationZ": -78.576 },
+						"ItemAnchor": { "rotationX": 3.0, "rotationY": 12.0, "rotationZ": 72.2436 },
+						"UpperArmL": { "rotationX": -4.3655, "rotationY": -49.5086, "rotationZ": -67.951 },
+						"LowerArmL": { "rotationX": 85.6613, "rotationY": 37.8896, "rotationZ": -68.8895 },
+						"UpperTorso": { "rotationX": 0.0, "rotationY": -18.4156, "rotationZ": 0.0 },
+						"Head": { "rotationX": 3.4286, "rotationY": 21.4459, "rotationZ": 0.0 },
+						"LowerTorso": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": -6.4459, "rotationZ": 0.0 },
+						"UpperFootL": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -6.0 },
+						"LowerFootL": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 7.0 },
+						"UpperFootR": { "rotationX": 6.974, "rotationY": -4.2208, "rotationZ": -29.6623 },
+						"LowerFootR": { "rotationX": -3.0, "rotationY": -6.0, "rotationZ": 32.961 }
+					}
+				},
+				{
+					"frame": 4,
+					"elements": {
+						"LowerArmL": { "rotationX": 137.7803, "rotationY": 29.6515, "rotationZ": -102.7466 }
+					}
+				},
+				{
+					"frame": 5,
+					"elements": {
+						"UpperArmL": { "rotationX": -64.8417, "rotationY": -40.7467, "rotationZ": -110.1891 },
+						"LowerArmL": { "rotationX": 161.8994, "rotationY": 5.4134, "rotationZ": -124.6038 }
+					}
+				},
+				{
+					"frame": 6,
+					"elements": {
+						"UpperFootR": { "rotationX": 0.974, "rotationY": 0.9221, "rotationZ": -44.3766 },
+						"LowerFootR": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 42.3896 },
+						"UpperFootL": { "rotationX": -6.0, "rotationY": 10.0, "rotationZ": 25.1429 },
+						"LowerFootL": { "rotationX": 0.0, "rotationY": 15.0, "rotationZ": 1.4286 },
+						"LowerTorso": { "offsetX": -6.8571, "offsetY": -0.8, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": -2.0173, "rotationZ": 0.0 },
+						"UpperTorso": { "rotationX": 0.0, "rotationY": 20.8701, "rotationZ": 0.0 },
+						"Head": { "rotationX": -0.7143, "rotationY": -14.5541, "rotationZ": 0.0 },
+						"UpperArmR": { "rotationX": 53.1505, "rotationY": 6.619, "rotationZ": -65.3493 },
+						"LowerArmR": { "rotationX": 7.0972, "rotationY": 1.9934, "rotationZ": -16.1474 },
+						"UpperArmL": { "rotationX": -77.0798, "rotationY": -21.3657, "rotationZ": -114.8081 },
+						"LowerArmL": { "rotationX": 177.5184, "rotationY": 4.1753, "rotationZ": -128.4609 },
+						"ItemAnchor": { "rotationX": 8.0, "rotationY": 17.0, "rotationZ": 96.0 }
+					}
+				},
+				{
+					"frame": 11,
+					"elements": {
+						"LowerTorso": { "offsetX": -6.8571, "offsetY": -0.8, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": -2.0173, "rotationZ": 0.0 },
+						"UpperTorso": { "rotationX": 0.0, "rotationY": 20.8701, "rotationZ": 0.0 },
+						"UpperArmR": { "rotationX": 53.1505, "rotationY": 6.619, "rotationZ": -65.3493 },
+						"LowerArmR": { "rotationX": 7.0972, "rotationY": 1.9934, "rotationZ": -16.1474 },
+						"ItemAnchor": { "rotationX": 8.0, "rotationY": 17.0, "rotationZ": 96.0 },
+						"UpperArmL": { "offsetX": 0.0, "offsetY": -0.8, "offsetZ": 0.0, "rotationX": -77.0798, "rotationY": -21.3657, "rotationZ": -114.8081 },
+						"LowerArmL": { "rotationX": 177.5184, "rotationY": 4.1753, "rotationZ": -128.4609 },
+						"Head": { "rotationX": -0.7143, "rotationY": -14.5541, "rotationZ": 0.0 },
+						"UpperFootL": { "rotationX": -6.0, "rotationY": 10.0, "rotationZ": 25.1429 },
+						"LowerFootL": { "rotationX": 0.0, "rotationY": 15.0, "rotationZ": 1.4286 },
+						"UpperFootR": { "rotationX": 0.974, "rotationY": 0.9221, "rotationZ": -44.3766 },
+						"LowerFootR": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 42.3896 }
+					}
+				}
+			]
+		}
+  }
+
+
+]

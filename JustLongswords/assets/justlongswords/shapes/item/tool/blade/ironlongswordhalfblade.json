@@ -1,0 +1,42 @@
+{
+	"editor": {
+		"collapsedPaths": "",
+		"allAngles": false,
+		"entityTextureMode": true
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"ingot": "game:block/metal/ingot/iron"
+	},
+	"elements": [
+		{
+			"name": "origin",
+			"from": [ 9.0, 1.0, 8.0 ],
+			"to": [ 9.0, 1.0, 8.0 ],
+			"uv": [ 0.0, 0.0 ],
+			"rotationOrigin": [ 9.0, 1.0, 8.0 ],
+			"faces": {
+			},
+			"children": [
+				{
+					"name": "blade",
+					"from": [ -7.0, -1.2, -0.75 ],
+					"to": [ 5.0, -0.8, 0.75 ],
+					"autoUnwrap": false,
+					"uv": [ 2.0, 7.5 ],
+					"rotationOrigin": [ -7.0, -0.9, 0.2 ],
+					"faces": {
+						"north": { "texture": "#ingot", "uv": [ 0.0, 9.0, 12.0, 9.5 ], "windMode": [-1,-1,-1,-1] },
+						"east": { "texture": "#ingot", "uv": [ 0.0, 9.5, 1.5, 10.0 ], "windMode": [-1,-1,-1,-1] },
+						"south": { "texture": "#ingot", "uv": [ 4.0, 9.0, 16.0, 9.5 ], "windMode": [-1,-1,-1,-1] },
+						"west": { "texture": "#ingot", "uv": [ 0.0, 10.0, 1.5, 10.5 ], "windMode": [-1,-1,-1,-1] },
+						"up": { "texture": "#ingot", "uv": [ 0.0, 7.5, 12.0, 9.0 ], "rotation": 180, "windMode": [-1,-1,-1,-1] },
+						"down": { "texture": "#ingot", "uv": [ 4.0, 7.5, 16.0, 9.0 ], "windMode": [-1,-1,-1,-1] }
+					}
+				}
+			]
+		}
+	]}
