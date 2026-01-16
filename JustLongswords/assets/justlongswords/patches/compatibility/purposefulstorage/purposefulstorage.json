@@ -1,0 +1,35 @@
+[
+  {
+    "file": "purposefulstorage:config/transformations/weapons/swords.json",
+    "op": "addmerge", "path": "/justlongswords:longsword-*",
+    "dependsOn": [ { "modid": "purposefulstorage"} ],
+    "value": {
+      "origin": { "x": 0, "y": 0, "z": 0.5 }, 
+      "translation": { "x": -0.04, "y": 0, "z": -0.04 },
+      "rotation": { "x": 90 }, 
+      "scale": 0.65
+    }
+  },
+  {
+    "file": "purposefulstorage:config/transformations/weapons/longweapons.json",
+    "op": "addmerge", "path": "/justlongswords:longsword-*",
+    "dependsOn": [ { "modid": "purposefulstorage"} ],
+    "value": { 
+      "origin": { "x": 0, "y": 0, "z": 0 }, 
+      "translation": { "x": 0.2, "y": -0.05, "z": -0.01 },
+      "rotation": { "z": -0.9 },
+      "scale": 1 }
+  },
+  {
+    "file": "purposefulstorage:config/restrictions/weapons/longweapons.json",
+    "op": "addmerge", "path": "/CollectibleCodes",
+    "dependsOn": [ { "modid": "purposefulstorage"} ],
+    "value": ["justlongswords:longsword-*"]
+  },
+  {
+    "file": "purposefulstorage:config/restrictions/weapons/swords.json",
+    "op": "addmerge", "path": "/CollectibleCodes",
+    "dependsOn": [ { "modid": "purposefulstorage"} ],
+    "value": ["justlongswords:longsword-*"]
+  }
+]
