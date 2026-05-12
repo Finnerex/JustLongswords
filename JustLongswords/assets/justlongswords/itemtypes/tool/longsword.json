@@ -1,6 +1,7 @@
 {
 	"code": "longsword",
 	"class": "justlongswords.longsword",
+	"tags": ["weapon", "weapon-melee", "weapon-sword", "tool-sword"],
 	"storageFlags": 5,
 	"damagedby": ["blockbreaking", "attacking"],
 	"tool": "sword",
@@ -19,10 +20,13 @@
 			"rotation": { "x": 22, "y": 88, "z": -87 },
 			"scale": 0.85
 		},
+		"attachableToEntity": {
+			"categoryCode": "weapon1m"
+		},
 		"attackAnimations": [ "LongswordCutLeft", "LongswordCutRight", "LongswordThrust" ]
 	},
 	"variantgroups": [
-			{ "code": "material", "states": [ "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel" ]}
+			{ "code": "metal", "states": [ "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel" ]}
 		],
 	"behaviors": [{ 
 		"name": "GroundStorable",
@@ -34,36 +38,36 @@
 			"collisionBox": { "x1": 0, "y1": 0, "z1": 0, "x2": 0, "y2": 0, "z2": 0 }
 		  }
 		},
-		{
-			"name": "AnimationAuthoritative"
-		}
+		{ "name": "Buffable" },
+		{ "name": "Sharpenable" },
+		{ "name": "AnimationAuthoritative" }
 	],
 	
 	"shape": { "base": "item/tool/blade/ironlongsword" },
 	"texturesByType": {
 			"longsword-tinbronze": {
-				"ingot": { "base": "game:block/metal/ingot/{material}" },
-				"metal": { "base": "game:block/metal/plate/{material}" }
+				"ingot": { "base": "game:block/metal/ingot/{metal}" },
+				"metal": { "base": "game:block/metal/plate/{metal}" }
 				},
 			"longsword-bismuthbronze": {
-				"ingot": { "base": "game:block/metal/ingot/{material}" },
-				"metal": { "base": "game:block/metal/plate/{material}" }
+				"ingot": { "base": "game:block/metal/ingot/{metal}" },
+				"metal": { "base": "game:block/metal/plate/{metal}" }
 				},
 			"longsword-blackbronze": {
-				"ingot": { "base": "game:block/metal/ingot/{material}" },
-				"metal": { "base": "game:block/metal/plate/{material}" }
+				"ingot": { "base": "game:block/metal/ingot/{metal}" },
+				"metal": { "base": "game:block/metal/plate/{metal}" }
 				},
 			"longsword-iron": {
-				"ingot": { "base": "game:block/metal/ingot/{material}" },
-				"metal": { "base": "game:block/metal/lantern/{material}" }
+				"ingot": { "base": "game:block/metal/ingot/{metal}" },
+				"metal": { "base": "game:block/metal/lantern/{metal}" }
 				},
 			"longsword-meteoriciron": {
-				"ingot": { "base": "game:block/metal/ingot/{material}" },
-				"metal": { "base": "game:block/metal/lantern/{material}" }
+				"ingot": { "base": "game:block/metal/ingot/{metal}" },
+				"metal": { "base": "game:block/metal/lantern/{metal}" }
 				},
 			"longsword-steel": {
-				"ingot": { "base": "game:block/metal/ingot/{material}" },
-				"metal": { "base": "game:block/metal/lantern/{material}" }
+				"ingot": { "base": "game:block/metal/ingot/{metal}" },
+				"metal": { "base": "game:block/metal/lantern/{metal}" }
 				}
 			
 		},
@@ -71,7 +75,7 @@
 	"heldRightReadyAnimation": "LongswordIdleReady",
 	"heldTpHitAnimation": "LongswordCutLeft",
 	"attackRange": 3.6,
-	"name": "{material} Longsword",
+	"name": "{metal} Longsword",
 	"tooltierbytype": {
 			"longsword-tinbronze": 3,
 			"longsword-bismuthbronze": 3,
@@ -101,20 +105,24 @@
 		"translation": { "x": 0, "y": 0, "z": 0 },
 		"rotation": { "x": -89, "y": 47, "z": 33 },
 		"origin": { "x": 0.61, "y": 0, "z": 0.47 },
-		"scale": 1.7 },
+		"scale": 1.7
+	},
 	"fpHandTransform": {
 		"translation": { "x": -0.4, "y": -0.5, "z": 0.6 },
 		"rotation": { "x": -35, "y": 0, "z": 85 },
 		"origin": { "x": 0.1, "y": 0.5, "z": 0.5 },
-		"scale": 2.75 },
+		"scale": 2.75
+	},
 	"groundTransform": {
 		"translation": { "x": 0, "y": 0, "z": 0 },
 		"rotation": { "x": 0, "y": 0, "z": 0 },
 		"origin": { "x": 0.5, "y": 0, "z": 0.5 },
-		"scale": 3.4 },
+		"scale": 3.4
+	},
 	"tpHandTransform": {
 		"translation": { "x": -0.85, "y": 0.05, "z": -0.54 },
 		"rotation": { "x": -90, "y": 0, "z": 0 },
 		"origin": { "x": 0.5, "y": 0, "z": 0.5 },
-		"scale": 0.85 }
+		"scale": 0.85
+	}
 }
