@@ -18,6 +18,10 @@ public class JustLongswordsModSystem : ModSystem
         _harmony.PatchAll();
         api.RegisterItemClass(Mod.Info.ModID + ".longsword", typeof(ItemLongsword));
     }
+    
+    public override void Dispose() {
+        _harmony?.UnpatchAll(Mod.Info.ModID);
+    }
 
 
     // this is so the modifiers dont apply twice (i wish i knew a better way of doing this)
