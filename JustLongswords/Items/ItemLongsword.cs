@@ -1,7 +1,5 @@
-﻿using System.Linq;
-using Vintagestory.API.Common;
+﻿using Vintagestory.API.Common;
 using Vintagestory.API.Common.Entities;
-
 namespace JustLongswords.Items;
 
 public class ItemLongsword : Item

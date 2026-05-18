@@ -1,0 +1,606 @@
+{
+  "editor": {
+    "allAngles": true,
+    "entityTextureMode": true,
+    "backdrops": [],
+    "attachments": []
+  },
+  "textures": {
+    "ingot": "game:block/metal/ingot/iron",
+    "metal": "game:block/metal/lantern/iron",
+    "oak": "game:block/wood/oak",
+    "leather": "game:block/leather/plain"
+  },
+  "elements": [
+    {
+      "name": "origin",
+      "from":[2.6503167375922203,6.5988738834857941,0.48387130908668041],
+      "to":[2.6503167375922203,6.5988738834857941,0.48387130908668041],
+      "shade": true,
+      "faces": {},
+      "rotationOrigin":[2.6503167375922203,6.5988738834857941,0.48387130908668041],
+      "rotationX": -74.0,
+      "rotationY": 32.0,
+      "rotationZ": -4.0,
+      "scaleX": 0.85,
+      "scaleY": 0.85,
+      "scaleZ": 0.85,
+      "renderPass": -1,
+      "children": [
+        {
+          "name": "handle",
+          "from":[-10.5,-0.6,-0.6],
+          "to":[-2.5,0.4,0.6],
+          "shade": true,
+          "faces": {
+            "north": {
+              "texture": "#oak",
+              "uv":[0.0,14.5,8.0,15.5],
+              "rotation": 180.0,
+              "enabled": true,
+              "rotationIndex": 2
+            },
+            "south": {
+              "texture": "#oak",
+              "uv":[8.0,14.5,16.0,15.5],
+              "windMode": [
+                -1,
+                -1,
+                -1,
+                -1
+              ],
+              "enabled": true
+            },
+            "west": {
+              "texture": "#oak",
+              "uv":[1.0,14.5,2.0,15.5],
+              "windMode": [
+                -1,
+                -1,
+                -1,
+                -1
+              ],
+              "enabled": true
+            },
+            "up": {
+              "texture": "#oak",
+              "uv":[0.0,13.5,8.0,14.5],
+              "enabled": true
+            },
+            "down": {
+              "texture": "#oak",
+              "uv":[8.0,13.5,16.0,14.5],
+              "rotation": 180.0,
+              "enabled": true,
+              "rotationIndex": 2
+            }
+          },
+          "rotationOrigin":[-5.0,0.0,0.0],
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "scaleZ": 1.0,
+          "renderPass": -1,
+          "children": [
+            {
+              "name": "pommel",
+              "from":[-0.3,-0.25,-0.15],
+              "to":[0.7,1.25,1.35],
+              "shade": true,
+              "faces": {
+                "north": {
+                  "texture": "#ingot",
+                  "uv":[0.0,1.5,1.0,3.0],
+                  "enabled": true
+                },
+                "east": {
+                  "texture": "#ingot",
+                  "uv":[1.0,1.5,2.5,3.0],
+                  "enabled": true
+                },
+                "south": {
+                  "texture": "#ingot",
+                  "uv":[2.5,1.5,3.5,3.0],
+                  "enabled": true
+                },
+                "west": {
+                  "texture": "#ingot",
+                  "uv":[3.5,1.5,5.0,3.0],
+                  "enabled": true
+                },
+                "up": {
+                  "texture": "#ingot",
+                  "uv":[0.0,0.0,1.0,1.5],
+                  "enabled": true
+                },
+                "down": {
+                  "texture": "#ingot",
+                  "uv":[1.0,0.0,2.0,1.5],
+                  "enabled": true
+                }
+              },
+              "rotationOrigin":[0.7,0.7,0.0],
+              "scaleX": 1.0,
+              "scaleY": 1.0,
+              "scaleZ": 1.0,
+              "renderPass": -1,
+              "renderInEditor": true,
+              "uv":[0.0,0.0]
+            },
+            {
+              "name": "hilt",
+              "from":[8.0,-0.3,-0.65],
+              "to":[8.5,1.5,1.85],
+              "shade": true,
+              "faces": {
+                "north": {
+                  "texture": "#metal",
+                  "uv":[6.0,13.5,6.5,15.0],
+                  "enabled": true
+                },
+                "east": {
+                  "texture": "#metal",
+                  "uv":[6.5,13.5,9.0,15.0],
+                  "enabled": true
+                },
+                "south": {
+                  "texture": "#metal",
+                  "uv":[9.0,13.5,9.5,15.0],
+                  "enabled": true
+                },
+                "west": {
+                  "texture": "#metal",
+                  "uv":[9.5,13.5,12.0,15.0],
+                  "enabled": true
+                },
+                "up": {
+                  "texture": "#metal",
+                  "uv":[6.0,11.0,6.5,13.5],
+                  "enabled": true
+                },
+                "down": {
+                  "texture": "#metal",
+                  "uv":[6.5,11.0,7.0,13.5],
+                  "enabled": true
+                }
+              },
+              "rotationOrigin":[8.0,-0.25,0.7],
+              "scaleX": 1.0,
+              "scaleY": 1.0,
+              "scaleZ": 1.0,
+              "renderPass": -1,
+              "children": [
+                {
+                  "name": "hilt1",
+                  "from":[0.0,0.7,0.0],
+                  "to":[4.0,1.1,0.8],
+                  "shade": true,
+                  "faces": {
+                    "north": {
+                      "texture": "#metal",
+                      "uv":[6.0,2.5,10.0,3.0],
+                      "enabled": true
+                    },
+                    "east": {
+                      "texture": "#metal",
+                      "uv":[10.0,2.5,10.5,3.0],
+                      "enabled": true
+                    },
+                    "south": {
+                      "texture": "#metal",
+                      "uv":[10.5,2.5,14.5,3.0],
+                      "enabled": true
+                    },
+                    "up": {
+                      "texture": "#metal",
+                      "uv":[6.0,2.0,10.0,2.5],
+                      "enabled": true
+                    },
+                    "down": {
+                      "texture": "#metal",
+                      "uv":[10.0,2.0,14.0,2.5],
+                      "enabled": true
+                    }
+                  },
+                  "rotationOrigin":[0.3,1.3,0.4],
+                  "rotationY": 90.0,
+                  "scaleX": 1.0,
+                  "scaleY": 1.0,
+                  "scaleZ": 1.0,
+                  "renderPass": -1,
+                  "renderInEditor": true,
+                  "uv":[6.0,2.0]
+                },
+                {
+                  "name": "hilt2",
+                  "from":[0.0,0.7,1.7],
+                  "to":[4.0,1.1,2.5],
+                  "shade": true,
+                  "faces": {
+                    "north": {
+                      "texture": "#metal",
+                      "uv":[6.0,0.5,10.0,1.0],
+                      "enabled": true
+                    },
+                    "east": {
+                      "texture": "#metal",
+                      "uv":[10.0,0.5,10.5,1.0],
+                      "enabled": true
+                    },
+                    "south": {
+                      "texture": "#metal",
+                      "uv":[10.5,0.5,14.5,1.0],
+                      "enabled": true
+                    },
+                    "up": {
+                      "texture": "#metal",
+                      "uv":[6.0,0.0,10.0,0.5],
+                      "enabled": true
+                    },
+                    "down": {
+                      "texture": "#metal",
+                      "uv":[10.0,0.0,14.0,0.5],
+                      "enabled": true
+                    }
+                  },
+                  "rotationOrigin":[0.3,1.3,2.1],
+                  "rotationY": -90.0,
+                  "scaleX": 1.0,
+                  "scaleY": 1.0,
+                  "scaleZ": 1.0,
+                  "renderPass": -1,
+                  "renderInEditor": true,
+                  "uv":[6.0,0.0]
+                }
+              ],
+              "renderInEditor": true,
+              "uv":[6.0,11.0]
+            }
+          ],
+          "renderInEditor": true,
+          "autoUnwrap": false,
+          "uv":[0.0,13.5]
+        },
+        {
+          "name": "scabbard_base",
+          "from":[-2.0,-0.5,-1.0],
+          "to":[-1.0,0.5,1.0],
+          "shade": true,
+          "faces": {
+            "north": {
+              "texture": "#ingot",
+              "uv":[0.0,7.0,1.0,8.0],
+              "enabled": true
+            },
+            "east": {
+              "texture": "#ingot",
+              "uv":[1.0,7.0,3.0,8.0],
+              "enabled": true
+            },
+            "south": {
+              "texture": "#ingot",
+              "uv":[3.0,7.0,4.0,8.0],
+              "enabled": true
+            },
+            "west": {
+              "texture": "#ingot",
+              "uv":[4.0,7.0,6.0,8.0],
+              "enabled": true
+            },
+            "up": {
+              "texture": "#ingot",
+              "uv":[0.0,5.0,1.0,7.0],
+              "enabled": true
+            },
+            "down": {
+              "texture": "#ingot",
+              "uv":[1.0,5.0,2.0,7.0],
+              "enabled": true
+            }
+          },
+          "rotationOrigin":[-2.0,-0.5,-1.0],
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "scaleZ": 1.0,
+          "renderPass": -1,
+          "children": [
+            {
+              "name": "scabbard_mid1",
+              "from":[1.0,0.0,0.0],
+              "to":[17.0,1.0,2.0],
+              "shade": true,
+              "faces": {
+                "north": {
+                  "texture": "#leather",
+                  "uv":[0.0,8.5,16.0,9.5],
+                  "enabled": true
+                },
+                "east": {
+                  "texture": "#leather",
+                  "uv":[2.0,12.5,4.0,13.5],
+                  "enabled": true
+                },
+                "south": {
+                  "texture": "#leather",
+                  "uv":[0.0,11.5,16.0,12.5],
+                  "enabled": true
+                },
+                "west": {
+                  "texture": "#leather",
+                  "uv":[0.0,12.5,2.0,13.5],
+                  "enabled": true
+                },
+                "up": {
+                  "texture": "#leather",
+                  "uv":[0.0,6.5,16.0,8.5],
+                  "rotation": 180.0,
+                  "enabled": true,
+                  "rotationIndex": 2
+                },
+                "down": {
+                  "texture": "#leather",
+                  "uv":[0.0,9.5,16.0,11.5],
+                  "enabled": true
+                }
+              },
+              "rotationOrigin":[1.0,0.0,0.0],
+              "scaleX": 1.0,
+              "scaleY": 1.0,
+              "scaleZ": 1.0,
+              "renderPass": -1,
+              "children": [],
+              "renderInEditor": true,
+              "autoUnwrap": false,
+              "uv":[0.0,6.5]
+            },
+            {
+              "name": "scabbard_mid2",
+              "from":[17.0,0.0,0.25],
+              "to":[24.0,1.0,1.75],
+              "shade": true,
+              "faces": {
+                "north": {
+                  "texture": "#leather",
+                  "uv":[0.0,1.5,7.0,2.5],
+                  "enabled": true
+                },
+                "south": {
+                  "texture": "#leather",
+                  "uv":[7.0,1.5,14.0,2.5],
+                  "enabled": true
+                },
+                "up": {
+                  "texture": "#leather",
+                  "uv":[0.0,0.0,7.0,1.5],
+                  "enabled": true
+                },
+                "down": {
+                  "texture": "#leather",
+                  "uv":[7.0,0.0,14.0,1.5],
+                  "enabled": true
+                }
+              },
+              "rotationOrigin":[17.0,0.0,0.25],
+              "scaleX": 1.0,
+              "scaleY": 1.0,
+              "scaleZ": 1.0,
+              "renderPass": -1,
+              "children": [],
+              "renderInEditor": true,
+              "autoUnwrap": false,
+              "uv":[0.0,0.0]
+            },
+            {
+              "name": "scabbard_tip",
+              "from":[24.0,0.0,0.25],
+              "to":[26.0,1.0,1.75],
+              "shade": true,
+              "faces": {
+                "north": {
+                  "texture": "#ingot",
+                  "uv":[8.5,4.0,10.5,5.0],
+                  "enabled": true
+                },
+                "east": {
+                  "texture": "#ingot",
+                  "uv":[10.5,4.0,12.0,5.0],
+                  "enabled": true
+                },
+                "south": {
+                  "texture": "#ingot",
+                  "uv":[12.0,4.0,14.0,5.0],
+                  "enabled": true
+                },
+                "west": {
+                  "texture": "#ingot",
+                  "uv":[14.0,4.0,15.5,5.0],
+                  "enabled": true
+                },
+                "up": {
+                  "texture": "#ingot",
+                  "uv":[8.5,2.5,10.5,4.0],
+                  "enabled": true
+                },
+                "down": {
+                  "texture": "#ingot",
+                  "uv":[10.5,2.5,12.5,4.0],
+                  "enabled": true
+                }
+              },
+              "rotationOrigin":[24.0,0.0,0.25],
+              "scaleX": 1.0,
+              "scaleY": 1.0,
+              "scaleZ": 1.0,
+              "renderPass": -1,
+              "children": [],
+              "renderInEditor": true,
+              "uv":[8.5,2.5]
+            },
+            {
+              "name": "scabbard_detail1",
+              "from":[2.0296846415149048,-0.10000000149011612,-0.11299850139766932],
+              "to":[2.7296846295939758,1.1000000461935997,2.1870014509186149],
+              "shade": true,
+              "faces": {
+                "north": {
+                  "texture": "#leather",
+                  "uv":[4.5,5.5,5.0,6.5],
+                  "enabled": true
+                },
+                "east": {
+                  "texture": "#leather",
+                  "uv":[5.0,5.5,7.0,6.5],
+                  "enabled": true
+                },
+                "south": {
+                  "texture": "#leather",
+                  "uv":[7.0,5.5,7.5,6.5],
+                  "enabled": true
+                },
+                "west": {
+                  "texture": "#leather",
+                  "uv":[7.5,5.5,9.5,6.5],
+                  "enabled": true
+                },
+                "up": {
+                  "texture": "#leather",
+                  "uv":[4.5,3.5,5.0,5.5],
+                  "enabled": true
+                },
+                "down": {
+                  "texture": "#leather",
+                  "uv":[5.0,3.5,5.5,5.5],
+                  "enabled": true
+                }
+              },
+              "rotationOrigin":[2.0296846415149048,-0.10000000149011612,-0.11299850139766932],
+              "rotationY": 8.0,
+              "scaleX": 1.0,
+              "scaleY": 1.0,
+              "scaleZ": 1.0,
+              "renderPass": -1,
+              "renderInEditor": true,
+              "uv":[4.5,3.5]
+            },
+            {
+              "name": "scabbard_detail2",
+              "from":[3.47418593429029,-0.10000000149011612,-0.13084167242050171],
+              "to":[4.2741859462112188,1.1000000461935997,2.0691583752632141],
+              "shade": true,
+              "faces": {
+                "north": {
+                  "texture": "#leather",
+                  "uv":[0.0,4.5,0.5,5.5],
+                  "enabled": true
+                },
+                "east": {
+                  "texture": "#leather",
+                  "uv":[0.5,4.5,2.5,5.5],
+                  "enabled": true
+                },
+                "south": {
+                  "texture": "#leather",
+                  "uv":[2.5,4.5,3.0,5.5],
+                  "enabled": true
+                },
+                "west": {
+                  "texture": "#leather",
+                  "uv":[3.0,4.5,5.0,5.5],
+                  "enabled": true
+                },
+                "up": {
+                  "texture": "#leather",
+                  "uv":[0.0,2.5,0.5,4.5],
+                  "enabled": true
+                },
+                "down": {
+                  "texture": "#leather",
+                  "uv":[0.5,2.5,1.0,4.5],
+                  "enabled": true
+                }
+              },
+              "rotationOrigin":[3.47418593429029,-0.10000000149011612,-0.13084167242050171],
+              "rotationY": -4.0,
+              "scaleX": 1.0,
+              "scaleY": 1.0,
+              "scaleZ": 1.0,
+              "renderPass": -1,
+              "renderInEditor": true,
+              "uv":[0.0,2.5]
+            },
+            {
+              "name": "scabbard_detail3",
+              "from":[12.490282068378292,-0.10000000149011612,-0.10405172593891621],
+              "to":[13.690282116062008,1.1000000461935997,2.195948226377368],
+              "shade": true,
+              "faces": {
+                "north": {
+                  "texture": "#leather",
+                  "uv":[10.0,5.5,11.0,6.5],
+                  "enabled": true
+                },
+                "east": {
+                  "texture": "#leather",
+                  "uv":[11.0,5.5,13.0,6.5],
+                  "enabled": true
+                },
+                "south": {
+                  "texture": "#leather",
+                  "uv":[13.0,5.5,14.0,6.5],
+                  "enabled": true
+                },
+                "west": {
+                  "texture": "#leather",
+                  "uv":[14.0,5.5,16.0,6.5],
+                  "enabled": true
+                },
+                "up": {
+                  "texture": "#leather",
+                  "uv":[10.0,3.5,11.0,5.5],
+                  "enabled": true
+                },
+                "down": {
+                  "texture": "#leather",
+                  "uv":[11.0,3.5,12.0,5.5],
+                  "enabled": true
+                }
+              },
+              "rotationOrigin":[12.490282068378292,-0.10000000149011612,-0.10405172593891621],
+              "rotationY": 4.0,
+              "scaleX": 1.0,
+              "scaleY": 1.0,
+              "scaleZ": 1.0,
+              "renderPass": -1,
+              "renderInEditor": true,
+              "uv":[10.0,3.5]
+            }
+          ],
+          "renderInEditor": true,
+          "uv":[0.0,5.0]
+        }
+      ],
+      "stepParentName": "RightFrontStorage",
+      "renderInEditor": true,
+      "uv":[0.0,0.0]
+    }
+  ],
+  "textureWidth": 16,
+  "textureHeight": 16,
+  "textureSizes": {
+    "ingot": [
+      16,
+      16
+    ],
+    "metal": [
+      16,
+      16
+    ],
+    "oak": [
+      16,
+      16
+    ],
+    "leather": [
+      16,
+      16
+    ]
+  }
+}

@@ -21,7 +21,11 @@
 			"scale": 0.85
 		},
 		"attachableToEntity": {
-			"categoryCode": "weapon1m"
+			"categoryCode": "weapon1m",
+			"attachedShapeBySlotCode": {
+				"frontrightside": { "base": "item/wearable/hooved/elk/weaponr-longsword" },
+				"frontleftside": { "base": "item/wearable/hooved/elk/weaponl-longsword" }
+			}
 		},
 		"attackAnimations": [ "LongswordCutLeft", "LongswordCutRight", "LongswordThrust" ]
 	},
